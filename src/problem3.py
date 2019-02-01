@@ -3,7 +3,7 @@ Exam 3, problem 3.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Yicheng Yang.  January 2019.
 
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -152,6 +152,13 @@ def run_test_problem3():
 
 
 def problem3(sequence):
+    n = 0
+    for k in range(len(sequence)):
+        if is_prime(sequence[k]) == True:
+            sequence[k] += 3
+            n = n +1
+    return n
+
     """
     What comes in:
       -- A sequence of integers.

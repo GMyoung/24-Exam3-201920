@@ -3,7 +3,7 @@ Exam 3, problem 5.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Yicheng Yang.  January 2019.
 
 """  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
@@ -117,6 +117,19 @@ def run_test_problem5():
 
 
 def problem5(seq_of_seq):
+    list = []
+    returned_list = []
+    for k in range(len(seq_of_seq)):
+        if seq_of_seq[k] != []:
+            for j in range(len(seq_of_seq[k])):
+                if seq_of_seq[k][j - 1] <= seq_of_seq[k][j]:
+                    list = seq_of_seq[k][j]
+            returned_list.append(list)
+        else:
+            returned_list = returned_list
+    return returned_list
+
+
     """
     What comes in:
       -- A sequence of sub-sequences of integers.

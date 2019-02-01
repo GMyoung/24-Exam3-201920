@@ -3,9 +3,9 @@ Exam 3, problem 2.
 
 Authors: Vibha Alangar, Aaron Wilkin, David Mutchler, Dave Fisher, 
          Matt Boutell, Amanda Stouder, their colleagues and 
-         PUT_YOUR_NAME_HERE.  January 2019.
+         Yicheng Yang.  January 2019.
 
-"""  # TODO: 1. PUT YOUR NAME IN THE ABOVE LINE.
+"""  # DONE: 1. PUT YOUR NAME IN THE ABOVE LINE.
 
 
 def main():
@@ -36,6 +36,15 @@ def run_test_shape():
 
 
 def shape(n):
+    for k in range(n):
+        string = ''
+        for j in range(n - k):
+            string += (str(k+1))
+        string += "*"
+        for j in range(k):
+            string += (str(j+1))
+        list_of_string = string
+        print(list_of_string)
     ####################################################################
     # IMPORTANT: In your final solution for this problem,
     #   you must NOT use string multiplication.
